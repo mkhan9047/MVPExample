@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repo_name"
+        android:gravity="center"
+        android:text= "Repository Name: Age Calc"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/repo_url"
+        android:text=  "url https://api.github.com/users/mkhan9047"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/repo_size"
+        android:layout_marginTop="5dp"
+        android:text= "Size: 129 KB"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repo_language"
+        android:gravity="center"
+        android:text= "Language: java"
+        />
+
+
+
+</LinearLayout>
