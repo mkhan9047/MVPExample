@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity implements RepositoryView {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         ReposPresenter reposPresenter = new ReposPresenter(this);
-        reposPresenter.getRepos();
+
+        reposPresenter.getRepos("Hello are you got it?");
 
 
     }

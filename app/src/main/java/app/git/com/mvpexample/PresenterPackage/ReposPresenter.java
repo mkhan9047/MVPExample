@@ -7,6 +7,7 @@ import java.util.List;
 
 import app.git.com.mvpexample.ModelPackage.Pojo.Repository;
 import app.git.com.mvpexample.ModelPackage.Service.ReposService;
+import app.git.com.mvpexample.Util.MyApp;
 import app.git.com.mvpexample.View.RepositoryView;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,7 +27,7 @@ public class ReposPresenter {
     }
 
 
-   public void getRepos(){
+   public void getRepos(final String e){
         reposService.getAPI()
                 .getRepos()
                 .enqueue(new Callback<List<Repository>>() {
@@ -38,6 +39,7 @@ public class ReposPresenter {
 
                             repositoryView.reposReady(repositoryList);
 
+                            Toast.makeText(MyApp.getAppContext(), "Data got successfully !" + e, Toast.LENGTH_SHORT).show();
 
                         }
                     }
